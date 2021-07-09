@@ -1,0 +1,42 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Framework Error{% endblock %}
+
+{% block body %}
+    <h1>Server Error</h1>
+    <p>An error occurred while processing the request.</p>
+    {% if displayErrors %}
+        <p class="lead text-danger"><strong>{{ message }}</strong></p>
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">Key</th>
+                <th scope="col">Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">Message</th>
+                <td><pre><code>{{ message }}</code></pre></td>
+            </tr>
+            <tr>
+                <th scope="row">File Name</th>
+                <td><pre><code>{{ fileName }}</code></pre></td>
+            </tr>
+            <tr>
+                <th scope="row">Line Number</th>
+                <td><pre><code>{{ lineNumber }}</code></pre></td>
+            </tr>
+            <tr>
+                <th scope="row">Error Type</th>
+                <td><pre><code>{{ errorType }}</code></pre></td>
+            </tr>
+            <tr>
+                <th scope="row">Backtrace</th>
+                <td><pre><code>{{ backtrace }}</code></pre></td>
+            </tr>
+            </tbody>
+        </table>
+    {% endif %}
+{% endblock %}
+

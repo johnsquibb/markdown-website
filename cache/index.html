@@ -1,0 +1,61 @@
+<!-- Bootstrap 5 Starter Template - https://getbootstrap.com/docs/5.0/getting-started/introduction/ -->
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/css/theme.css">
+
+    <title>Markdown Website Framework</title>
+</head>
+<body>
+<div class="col-lg-8 mx-auto p-3 py-md-5">
+            <h1>Markdown Website Framework</h1>
+        <h6>Generate web pages from Markdown files and create static HTML</h6>
+        <br>
+        <div class="headerNav">
+            <a href="/index.html">Home Page</a>
+        </div>
+        <hr/>
+    
+        <h2>Welcome</h2>
+<p>This content is rendered from the Markdown in <code>markdown/index.md</code> file. Modify it and refresh to see
+changes.</p>
+<h3>Adding new Pages</h3>
+<p>Add new folders with Markdown files in the <code>markdown</code> directory and navigate to them to
+automatically create new pages. For example, the <code>markdown/pages/about.md</code> file is loaded by
+visiting
+<a href="/pages/about.html">/pages/about</a>.</p>
+<h3>PHP, Bootstrap 5, Twig</h3>
+<p>A starter Bootstrap 5 template is provided in <code>templates/base.html.twig</code>. Modify it to change header
+and footer elements. Also check out the <code>templates/core/error.html.twig</code> and <code>not-found.html.twig</code>
+templates to customize 500 and 404 error pages.</p>
+<p>You can extend the framework functionality by adding new PHP controllers. Check
+out <a href="https://github.com/johnsquibb/php-microframework">johnsquibb/php-microframework</a> to learn more
+about using the framework that powers Markdown Website.</p>
+<h3>Cached HTML</h3>
+<p>After loading this page the cache directory should contain an <code>index.html</code> file with the full cache
+of this content, including header and footer. Relative links are automatically replaced with .html
+suffixes for connecting up all the pages.</p>
+<p>See the project README.md for instructions on how to view the cached HTML content.</p>
+
+            <hr/>
+        <p>
+            <a href="https://github.com/johnsquibb/markdown-website">Website generated from Markdown</a>
+        </p>
+    </div>
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
