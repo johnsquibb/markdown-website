@@ -74,7 +74,7 @@ class ApplicationController extends MarkdownController
     {
         // Suffix relative site links.
         $dom = new DomDocument();
-        $dom->loadHTML($html, LIBXML_NOWARNING | LIBXML_NOERROR );
+        $dom->loadHTML($html, LIBXML_NOWARNING | LIBXML_NOERROR);
         $hrefs = $dom->getElementsByTagName('a');
 
         $localHrefs = [];
